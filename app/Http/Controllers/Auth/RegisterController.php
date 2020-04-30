@@ -6,9 +6,6 @@ use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
-
-Route::get('signup', 'Auth\RegisterController@showRegistrationForm')->name('signup.get');
-Route::post('signup', 'Auth\RegisterController@register')->name('signup.post');
     
 class RegisterController extends Controller
 {
